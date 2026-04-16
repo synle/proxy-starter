@@ -48,11 +48,11 @@ Clone and generate the proxy script locally using one of the following options:
 #### For macOS/Linux
 ```bash
 # For macOS/Linux (using curl):
-curl -sL "https://github.com/synle/proxy-starter/blob/head/new-proxy.js?raw=1" | node - PORT=3000 TARGET_URL=http://example.com
+curl -fsSL "https://github.com/synle/proxy-starter/blob/head/new-proxy.js?raw=1" | node - PORT=3000 TARGET_URL=http://example.com
 ```
 
 #### For Windows
 ```bash
-curl -L "https://github.com/synle/proxy-starter/blob/head/new-proxy.js?raw=1" --output new-proxy.js
+curl -fsSL "https://github.com/synle/proxy-starter/blob/head/new-proxy.js?raw=1" --output new-proxy.js
 node new-proxy.js PORT=3000 TARGET_URL=http://example.com
 ```
