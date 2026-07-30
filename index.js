@@ -14,12 +14,8 @@ const KEY_FILE = "./ssl_privatekey.txt";
 
 // Parse command-line arguments
 const args = process.argv.slice(2);
-let PORT = (
-  args.find((arg) => arg.startsWith("PORT="))?.split("=")[1] || ""
-).trim();
-let TARGET_URL = (
-  args.find((arg) => arg.startsWith("TARGET_URL="))?.split("=")[1] || ""
-).trim();
+let PORT = (args.find((arg) => arg.startsWith("PORT="))?.split("=")[1] || "").trim();
+let TARGET_URL = (args.find((arg) => arg.startsWith("TARGET_URL="))?.split("=")[1] || "").trim();
 
 // Function to prompt user for input
 function promptUserForInput(field, defaultValue, rl) {
@@ -73,7 +69,7 @@ async function promptForValues() {
 npx https://github.com/synle/proxy-starter PORT=${PORT} TARGET_URL=${TARGET_URL}
 
 ====
-    `.trim()
+    `.trim(),
   );
 
   rl.close();
@@ -122,9 +118,7 @@ function runProxy() {
       proxy.web(req, res); // Proxy the request to the target URL
     })
     .listen(PORT, () => {
-      console.log(
-        `HTTPS proxy server listening on port ${PORT}, forwarding to ${TARGET_URL}`
-      );
+      console.log(`HTTPS proxy server listening on port ${PORT}, forwarding to ${TARGET_URL}`);
     });
 }
 

@@ -46,12 +46,14 @@ npx https://github.com/synle/proxy-starter PORT=9090 TARGET_URL=http://localhost
 Clone and generate the proxy script locally using one of the following options:
 
 #### For macOS/Linux
+
 ```bash
 # For macOS/Linux (using curl):
 curl -fsSL "https://raw.githubusercontent.com/synle/proxy-starter/HEAD/new-proxy.js" | node - PORT=3000 TARGET_URL=http://example.com
 ```
 
 #### For Windows
+
 ```bash
 curl -fsSL "https://raw.githubusercontent.com/synle/proxy-starter/HEAD/new-proxy.js" --output new-proxy.js
 node new-proxy.js PORT=3000 TARGET_URL=http://example.com

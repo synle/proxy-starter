@@ -1,19 +1,23 @@
 {
   "name": "proxy-starter",
   "version": "1.0.0",
-  "main": "index.js",
-  "scripts": {
-    "start": "node index.js",
-    "format": "npx prettier --write ./*.js ./*.json"
-  },
+  "description": "A Node.js script for setting up an HTTPS reverse proxy with a self-signed certificate.",
+  "license": "ISC",
+  "author": "Sy Le",
   "bin": {
     "proxy-starter": "index.js"
   },
-  "author": "Sy Le",
-  "license": "ISC",
-  "description": "A Node.js script for setting up an HTTPS reverse proxy with a self-signed certificate.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "format": "oxfmt --write .",
+    "format:check": "oxfmt --check ."
+  },
   "dependencies": {
     "http-proxy": "^1.18.1",
     "selfsigned": "^2.4.1"
+  },
+  "devDependencies": {
+    "oxfmt": "^0.61.0"
   }
 }
