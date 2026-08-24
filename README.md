@@ -16,28 +16,16 @@ Ideal for developers who want a secure proxy with minimal setup, as long as Node
 
 ### 🔧 Easiest Way (via `npx`)
 
-Start the HTTPS proxy with one line:
-
-```bash
-npx https://github.com/synle/proxy-starter
-```
-
-### 🔄 Customize Port and Target
-
-Pass `PORT` and `TARGET_URL` as arguments to customize the setup:
+Start the HTTPS proxy with one line (`PORT` and `TARGET_URL` are both required):
 
 ```bash
 npx https://github.com/synle/proxy-starter PORT=4443 TARGET_URL=http://localhost:8000
 ```
 
-```bash
-npx https://github.com/synle/proxy-starter PORT=9090 TARGET_URL=http://localhost:3000
-```
-
 **Available Parameters:**
 
-- `PORT` – The port for the HTTPS proxy (default: `9090`).
-- `TARGET_URL` – The HTTP target to forward to (default: `http://localhost:8080`).
+- `PORT` – The port for the HTTPS proxy.
+- `TARGET_URL` – The HTTP target to forward to (e.g. `http://localhost:8000`).
 
 ---
 
