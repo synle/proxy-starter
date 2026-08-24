@@ -35,7 +35,7 @@ const packageJson = {
   main: "index.js",
   scripts: {
     start: "node index.js",
-    format: "npx prettier --write ./*.js ./*.json",
+    format: "npx oxfmt --write ./*.js ./*.json",
   },
   bin: {
     "proxy-starter": "index.js",
