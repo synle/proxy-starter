@@ -11,7 +11,8 @@
   "scripts": {
     "start": "node index.js",
     "format": "oxfmt --write .",
-    "format:check": "oxfmt --check ."
+    "format:check": "oxfmt --check .",
+    "lint": "npx oxlint ."
   },
   "dependencies": {
     "http-proxy": "^1.18.1",
